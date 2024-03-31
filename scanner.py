@@ -1,5 +1,4 @@
 import socket
-from threading import Thread
 from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 
@@ -30,6 +29,6 @@ def scan_ports(host):
     return open_ports
 
 if __name__ == "__main__":
-    host = input("Enter the host/IP address to scan: ")
+    host = input("Введите имя хоста/IP-адрес для сканирования: ")
     open_ports = scan_ports(host)
-    print("Open ports:", open_ports)
+    print("Открытые порты:", open_ports)
